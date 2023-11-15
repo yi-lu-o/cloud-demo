@@ -6,6 +6,15 @@ spring:
     username: root
     password: 14777
     driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: orderservice
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:10086/eureka
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
