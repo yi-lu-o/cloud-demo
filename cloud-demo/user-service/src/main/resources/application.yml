@@ -1,6 +1,8 @@
 server:
   port: 8081
 spring:
+  autoconfigure:
+    exclude: org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration
   datasource:
     url: jdbc:mysql://localhost:3306/cloud_user?useSSL=false
     username: root
@@ -11,6 +13,7 @@ spring:
   cloud:
     nacos:
       server-addr: localhost:8848
+
 #eureka:
 #  client:
 #    service-url:
